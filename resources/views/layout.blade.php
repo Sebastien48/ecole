@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>layout</title> <!-- on pourra remplacer par variable titre -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="icon" href="/public/assets/academicore1.jpg" type="image/jpg" />
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+      <img src="/public/assets/academicore1.jpg" alt="Logo AcademiCore" height="40" />
+    </a>
+    <div class="d-flex">
+      <a href="/logout" class="btn btn-outline-light">Se déconnecter</a>
+    </div>
+  </div>
+</nav>
+
+<!-- Contenu principal -->
+<main class="container my-4">
+  <!-- Ici viendra le contenu spécifique de chaque page -->
+  {{ content }}
+</main>
+
+<!-- Footer -->
+<footer class="bg-light text-center py-3 mt-auto shadow-top">
+  <div class="container">
+    <small>&copy; 2025 AcademiCore - Tous droits réservés</small>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
